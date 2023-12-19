@@ -6,7 +6,7 @@ def gcd(a, b):
         a, b = b, a % b
 
     # Intentionally added unreachable code, assuming a pre-condition such as "a is a positive integer"
-    if a < 0:
+    if a < 0 or b < 0:
         return -a 
 
     return a
